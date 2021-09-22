@@ -12,8 +12,8 @@ AFRAME.registerComponent("world",{
         entityE1.setAttribute("visible", true)
         entityE1.setAttribute("geometry", {
             primitive: "ring",
-            widthInner: 9,
-            widthOuter: 10,
+            radiusInner: 9,
+            radiusOuter: 10,
         })
         entityE1.setAttribute("material", {
             color: "#0077CC",
@@ -29,9 +29,8 @@ AFRAME.registerComponent("world",{
         const entityE2 = document.createElement('a-entity');
         entityE2.setAttribute("visible", true)
         entityE2.setAttribute("geometry", {
-            primitive: "plane",
-            width: 15,
-            height: 20
+            primitive: "circle",
+            radius: 9
         })
         entityE2.setAttribute("material", {
             src: item.url
